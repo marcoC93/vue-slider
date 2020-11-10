@@ -19,10 +19,14 @@
                 <div id="succ">
                     <i @click="imgSuccessiva" class="fas fa-arrow-circle-right"></i>
                 </div>
+                <ul>
+                    <li @click='test(indice)' v-for='(img,indice) in imgCarousel'>
+                        <i class="far fa-circle"></i >
+                    </li>
+
+                </ul>
             </div>
-            <div >
-                {{imgPallini}}
-            </div>
+
         </div>
 
         <script src="script.js" charset="utf-8"></script>

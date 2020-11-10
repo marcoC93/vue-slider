@@ -14,7 +14,8 @@ var app = new Vue({
         'img/3.jpg',
     ],
 
-    imgPallini: '<i class="far fa-circle"></i>' 
+    // imgPallini: '<i class="far fa-circle"></i>' ,
+    // pallini : [1,2,3,4]
 
 },
   methods: {
@@ -23,12 +24,13 @@ var app = new Vue({
 // questa funzione serve per poter scorrere le varie immagini in successione, questo evento si verificherá al click della freccia destra
     imgSuccessiva()
     {
-        this.indiceImmagine += 1;
+        this.indiceImmagine = this.indiceImmagine + 1;
         if(this.indiceImmagine>this.imgCarousel.length - 1)
         {
             this.indiceImmagine = 0;
         }
     },
+// questa funzione é analoga
     imgPrecedente()
     {
         this.indiceImmagine -= 1;
@@ -36,6 +38,17 @@ var app = new Vue({
         {
         this.indiceImmagine= this.imgCarousel.length -1;
         }
+    },
+
+    test(index) {
+        this.indiceImmagine = index;
+        // console.log('pallino cliccato' + index );
     }
   }
 })
+
+
+
+// prova(){
+//     alert('Il click funziona')
+// }

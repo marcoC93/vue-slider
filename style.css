@@ -4,6 +4,14 @@
     box-sizing: border-box;
 
 }
+ul {
+    list-style-type: none;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 #root {
     display: flex;
     justify-content: center;
@@ -14,6 +22,7 @@
 #carousel {
     width: 700px;
     height: 500px;
+    position: relative;
     background: blue;
 
 }
