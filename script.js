@@ -46,8 +46,8 @@ var app = new Vue({
         }
     },
 
-        // questa funzione permette di rintracciare l'indice del pallino ed associarlo a quello delle immagini dove indiceImmagine viene associando dandogli come valore l'indice "index" ,che sará il parametro di questa funzione, del pallino e permettendo di saltare da un immagine all'altra senza l'ausilio delle frecce    
-    test(index) {
+        // questa funzione permette di rintracciare l'indice del pallino ed associarlo a quello delle immagini dove "indiceImmagine" viene associando dandogli come valore l'indice "index" ,che sará il parametro di questa funzione, del pallino e permettendo di saltare da un immagine all'altra, senza l'ausilio delle frecce, senza che siano direttamente successive o precedenti
+    cambioImg(index) {
         this.indiceImmagine = index;
         // console.log('pallino cliccato' + index );
     }

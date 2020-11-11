@@ -21,7 +21,7 @@
                 </div>
                 <ul>
                     <!-- Qui sono presenti i pallini che vengono generati tramite un ciclo v-for che verranno generati per il numero di immagini tramite il quale possiamo salvare l'indice degli elementi che scorrono ed immetterlo come parametro della funzione associata al click  -->
-                    <li @click='test(indice)' v-for='(img,indice) in imgCarousel'>
+                    <li @click='cambioImg(indice)' v-for='(img,indice) in imgCarousel'>
                         <i class="far fa-circle"></i >
                     </li>
 
